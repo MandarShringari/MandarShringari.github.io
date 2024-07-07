@@ -82,8 +82,10 @@
 									<h2>STEM Summer Coding and robotics Experience-oxford science centre </h2>
 									<p>This was a Work experience where I made a line-following robot and met with leading industrial companies such as GE and Oxford PV at Oxford Science Centre.</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
+										 <li><a href="#" class="button learn-more" data-target="oxford">Learn more</a></li>
+										</ul>
+                               
+
 								</div>
 							</div>
 						</section>
@@ -95,8 +97,8 @@
 									<h2>Airbus aerospace virtual</h2>
 									<p>This work experience was from airbus where I learned about the company and the aviation manufacturing industry in a virtual platform called Springpod.</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
+										    <li><a id="learn-more-airbus" href="generic.html" class="button">Learn more</a></li>
+										</ul>
 								</div>
 							</div>
 						</section>
@@ -107,8 +109,8 @@
 									<h2>ATL (Atal Tinkering Lab)</h2>
 									<p>ATL is an Indian government initiative which provides support and education to students who want to pursue career in STEM with help from top companies such as AWS and microsoft  .</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
+										    <li><a id="learn-more-atl" href="generic.html" class="button">Learn more</a></li> 
+										</ul>
 								</div>
 							</div>
 						</section>
@@ -119,12 +121,35 @@
 									<h2>Siemens Virtual Work Experience</h2>
 									<p>This work experience was at Siemens, where I explored the company's diverse work in the industry  .</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
+										    <li><a id="learn-more-siemens" href="generic.html" class="button">Learn more</a></li> 
+										</ul>
 								</div>
 							</div>
 						</section>
 					</section>
+				<section id="oxford" class="work-experience">
+					 <h2>STEM Summer Coding and Robotics Experience - Oxford Science Centre</h2>
+					<p>
+						 In this experience, I made a robot which is a line-following robot which follows a black line using an Infrared sensor to complete the project I learnt many things such as the coding language micro python, circuit building, soldering, CAD designing and other character-building lessons such as problem-solving and resilience to solve problems with robot. This knowledge can be helpful in my STEM career and make me eligible for the gold crest 
+						</p>
+                <p>
+                    STEM experience organized by the Oxford Science Center marked a significant chapter in my journey. Practical insights gained from companies like GE Healthcare and Oxford PV Working with these companies has given valuable skills which are transferable to any field such as Adaptability and Analytical Thinking as I worked with a team to solve some challenges on some projects which I think would play an important role.
+                </p>
+					 <img src="images/oxford_experience.jpg" alt="Oxford Experience Image" />
+					 <ul class="actions">
+						 <li><a href="#" class="button back">Back</a></li>
+						 </ul>
+					</section>
+            
+                
+                    
+               
+               
+                
+                   
+                
+					
+               
 
 				<!-- Two -->
 					<section id="two" class="wrapper style3 fade-up">
@@ -290,6 +315,34 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		 <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var learnMoreButtons = document.querySelectorAll('.learn-more');
+            var backButtons = document.querySelectorAll('.back');
+            var workExperienceSections = document.querySelectorAll('.work-experience');
+
+            learnMoreButtons.forEach(function (button) {
+                button.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    var target = button.getAttribute('data-target');
+                    workExperienceSections.forEach(function (section) {
+                        section.style.display = 'none';
+                    });
+                    document.getElementById(target).style.display = 'block';
+                });
+            });
+
+            backButtons.forEach(function (button) {
+                button.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    workExperienceSections.forEach(function (section) {
+                        section.style.display = 'none';
+                    });
+                });
+            });
+        });
+    </script>
+		
 
 	</body>
 </html>
