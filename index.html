@@ -29,7 +29,7 @@
                 margin-top: 20px;
             }
             .work-experience {
-                display: none;
+                padding: 2em;
             }
         </style>
     </head>
@@ -86,7 +86,7 @@
                             <h2>Airbus Aerospace Virtual</h2>
                             <p>This work experience was from Airbus where I learned about the company and the aviation manufacturing industry in a virtual platform called Springpod.</p>
                             <ul class="actions">
-                                <li><a id="learn-more-airbus" href="generic.html" class="button">Learn more</a></li>
+                                <li><a href="#" class="button learn-more" data-target="airbus">Learn more</a></li>
                             </ul>
                         </div>
                     </div>
@@ -98,7 +98,7 @@
                             <h2>ATL (Atal Tinkering Lab)</h2>
                             <p>ATL is an Indian government initiative which provides support and education to students who want to pursue careers in STEM with help from top companies such as AWS and Microsoft.</p>
                             <ul class="actions">
-                                <li><a id="learn-more-atl" href="generic.html" class="button">Learn more</a></li>
+                                <li><a href="#" class="button learn-more" data-target="atl">Learn more</a></li>
                             </ul>
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                             <h2>Siemens Virtual Work Experience</h2>
                             <p>This work experience was at Siemens, where I explored the company's diverse work in the industry.</p>
                             <ul class="actions">
-                                <li><a id="learn-more-siemens" href="generic.html" class="button">Learn more</a></li>
+                                <li><a href="#" class="button learn-more" data-target="siemens">Learn more</a></li>
                             </ul>
                         </div>
                     </div>
@@ -118,17 +118,46 @@
             </section>
 
             <!-- Detailed Work Experience Sections -->
-            <section id="oxford" class="work-experience">
+            <section id="oxford" class="work-experience" style="display:none;">
                 <h2>STEM Summer Coding and Robotics Experience - Oxford Science Centre</h2>
+                <p>In this experience, I made a line-following robot using an infrared sensor. To complete the project, I learned MicroPython, circuit building, soldering, CAD designing, and other character-building lessons such as problem-solving and resilience. These skills are invaluable for my STEM career and make me eligible for the gold crest.</p>
+                <p>The STEM experience at the Oxford Science Center provided practical insights from companies like GE Healthcare and Oxford PV. Working with these companies gave me valuable skills such as adaptability and analytical thinking, which are transferable to any field.</p>
+                <img src="images/oxford_experience.jpg" alt="Oxford Experience Image" />
+                <!-- Video section -->
                 <video width="320" height="240" controls>
-                    <source src="images/VID-20230810-WA0004 (3).mp4" type="video/mp4">
+                    <source src="path/to/VID-20230810-WA0004 (3).mp4" type="video/mp4">
                     Your browser does not support the video tag.
-                    </video>
-                    
-                    
-                <p>In this experience, I made a robot which is line-following robot which follows a black line using an Infrared sensor to complete the project I learnt many things such as the coding language micro python, circuit building, soldering, CAD designing and other character-building lessons such as problem-solving and resilience to solve problems with robot.. This knowledge can be helpful in my STEM career and make me eligible for the gold crest award.</p>
-                <p>STEM experience organized by the Oxford Science Center marked a significant chapter in my journey. Practical insights gained from companies like GE Healthcare and Oxford PV Working with these company's has given valuable skills which are transferable to any field such as Adaptability and Analytical Thinking as I worked with a team to solve some challenges on some projects which I think would play an important role.</p>
-                <img src="images/20230907_195415_resized.jpg" alt="Certificate of Attendance">
+                </video>
+                <!-- Resized Certificate Image -->
+                <img src="path/to/20230907_195415_resized.jpg" alt="Certificate of Attendance">
+                <ul class="actions">
+                    <li><a href="#" class="button back">Back</a></li>
+                </ul>
+            </section>
+
+            <section id="airbus" class="work-experience" style="display:none;">
+                <h2>Airbus Aerospace Virtual</h2>
+                <p>During my virtual work experience with Airbus, I gained in-depth knowledge of modern aircraft engineering and acquired insights into Airbus's business operations, discovering various career opportunities within the company. I explored future developments in the aerospace industry and understood Airbus's role in shaping these advancements. Additionally, collaborating with industry leaders provided valuable insights into the role of STEM in aviation and its future.</p>
+                <img src="images/airbus_experience.jpg" alt="Airbus Experience Image" />
+                <ul class="actions">
+                    <li><a href="#" class="button back">Back</a></li>
+                </ul>
+            </section>
+
+            <section id="atl" class="work-experience" style="display:none;">
+                <h2>ATL (Atal Tinkering Lab)</h2>
+                <p>At the age of 11, I was privileged to join ATL (Atal Tinkering Lab), an Indian government initiative aimed at nurturing a love for STEM in select students. ATL opened doors to diverse opportunities, including creating my own video game using Unity—a course facilitated by Microsoft in collaboration with ATL. This experience not only imparted technical knowledge in game development but also instilled in me a sense of purpose by educating me about UN sustainability goals and how STEM could be leveraged to achieve them. Worked on many projects related to UN sustainable goals and environment problems.</p>
+                <p>ATL continued to broaden my horizons with courses in Python programming and robotics. In a competition organized by ATL, challenging us to address real-life societal problems, I designed a device to aid individuals with hearing impairment in safely crossing roads—a cochlear implant equipped with a PIR sensor to detect approaching vehicles. These experiences further fueled my determination to contribute meaningfully to the evolving landscape of STEM and its potential to make a positive impact on society. .</p>
+                <img src="images/atl_experience.jpg" alt="ATL Experience Image" />
+                <ul class="actions">
+                    <li><a href="#" class="button back">Back</a></li>
+                </ul>
+            </section>
+
+            <section id="siemens" class="work-experience" style="display:none;">
+                <h2>Siemens Virtual Work Experience</h2>
+                <p>During my virtual work experience with Siemens, I gained comprehensive insights into the company's operations and innovations. I explored the engineering processes and technologies behind Siemens' cutting-edge projects, learned about its business structure, global impact, and the diverse career opportunities available. I examined the future of technology and Siemens' role in driving industry advancements. This immersive experience provided a deep understanding of the role of STEM in Siemens' success and prepared me for a potential career with the company. Additionally, I collaborated with industry experts and peers throughout the program.</p>
+                <img src="images/siemens_experience.jpg" alt="Siemens Experience Image" />
                 <ul class="actions">
                     <li><a href="#" class="button back">Back</a></li>
                 </ul>
@@ -165,15 +194,7 @@
                             <h3>Networking</h3>
                             <p>Phasellus convallis elit id ullamcorper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
                         </section>
-                        <section>
-                            <span class="icon major fa-gem"></span>
-                            <h3>AI and Machine Learning</h3>
-                            <p>Phasellus convallis elit id ullamcorper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-                        </section>
                     </div>
-                    <ul class="actions">
-                        <li><a href="#" class="button">Learn more</a></li>
-                    </ul>
                 </div>
             </section>
 
@@ -181,22 +202,19 @@
             <section id="three" class="wrapper style1 fade-up">
                 <div class="inner">
                     <h2>Achievements</h2>
+                    <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
                     <div class="features">
                         <section>
-                            <h3>First prize in the IET robotics competition</h3>
-                            <p>At my first-ever IET competition in 2018, I won the first prize in the robotics category, showcasing my ability to innovate and problem-solve effectively.</p>
+                            <h3>Math Challenges</h3>
+                            <p>Earned medals in various mathematics challenges, demonstrating my problem-solving skills and mathematical abilities.</p>
                         </section>
                         <section>
-                            <h3>Gold Medalist in the UKMT Math Challenge</h3>
-                            <p>Consistently securing a gold medal in the UKMT Math Challenge for three consecutive years, demonstrating my strong analytical and problem-solving skills.</p>
+                            <h3>Physics Competitions</h3>
+                            <p>Participated and excelled in physics competitions, showcasing my understanding and application of physical concepts.</p>
                         </section>
                         <section>
-                            <h3>Young Innovator Award - ATL</h3>
-                            <p>Recognized as a Young Innovator by ATL for my project on assistive technology for individuals with hearing impairments, showcasing my dedication to using technology for social good.</p>
-                        </section>
-                        <section>
-                            <h3>Published Research Paper on Quantum Computing</h3>
-                            <p>Published a research paper on Quantum Computing in a reputed journal, reflecting my deep interest and knowledge in advanced computing technologies.</p>
+                            <h3>Programming Contests</h3>
+                            <p>Competed in and won several programming contests, highlighting my proficiency in coding and algorithmic thinking.</p>
                         </section>
                     </div>
                 </div>
@@ -206,7 +224,7 @@
             <section id="four" class="wrapper style3 fade-up">
                 <div class="inner">
                     <h2>Get in touch</h2>
-                    <p>Feel free to reach out to me for any inquiries or collaborations. I am always open to discussing new ideas and opportunities.</p>
+                    <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
                     <div class="split style1">
                         <section>
                             <form method="post" action="#">
@@ -221,36 +239,46 @@
                                     </div>
                                     <div class="field">
                                         <label for="message">Message</label>
-                                        <textarea name="message" id="message" rows="5"></textarea>
+                                        <textarea name="message" id="message" rows="4"></textarea>
                                     </div>
                                 </div>
                                 <ul class="actions">
-                                    <li><input type="submit" value="Send Message" class="primary" /></li>
-                                    <li><input type="reset" value="Reset" /></li>
+                                    <li><input type="submit" value="Send Message" class="button primary" /></li>
                                 </ul>
                             </form>
                         </section>
-                        <section class="contact">
-                            <ul class="contact-icons">
-                                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                                <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                        <section>
+                            <ul class="contact">
+                                <li>
+                                    <h3>Address</h3>
+                                    <span>1234 Somewhere Road #5432<br />
+                                    Nashville, TN 00000-0000<br />
+                                    USA</span>
+                                </li>
+                                <li>
+                                    <h3>Email</h3>
+                                    <a href="#">someone@untitled.tld</a>
+                                </li>
+                                <li>
+                                    <h3>Phone</h3>
+                                    <span>(000) 000-0000</span>
+                                </li>
+                                <li>
+                                    <h3>Social</h3>
+                                    <ul class="icons">
+                                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                        <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </section>
                     </div>
                 </div>
             </section>
-        </div>
 
-        <!-- Footer -->
-        <footer id="footer" class="wrapper style1-alt">
-            <div class="inner">
-                <ul class="menu">
-                    <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-                </ul>
-            </div>
-        </footer>
+        </div>
 
         <!-- Scripts -->
         <script src="assets/js/jquery.min.js"></script>
@@ -259,29 +287,29 @@
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
         <script>
-            $(document).ready(function() {
-                $('.learn-more').click(function(e) {
-                    e.preventDefault();
-                    var target = $(this).data('target');
-                    $('.work-experience').hide();
-                    $('#' + target).show();
-
-                    // Scroll to the work experience section
-                    $('html, body').animate({
-                        scrollTop: $('#' + target).offset().top
-                    }, 1000);
+            document.querySelectorAll('.button.learn-more').forEach(button => {
+                button.addEventListener('click', event => {
+                    event.preventDefault();
+                    const targetId = button.getAttribute('data-target');
+                    document.querySelectorAll('.wrapper > section').forEach(section => {
+                        section.style.display = 'none';
+                    });
+                    document.getElementById(targetId).style.display = 'block';
                 });
+            });
 
-                $('.back').click(function(e) {
-                    e.preventDefault();
-                    $(this).closest('.work-experience').hide();
-
-                    // Scroll back to the top of the work experience overview section
-                    $('html, body').animate({
-                        scrollTop: $('#one').offset().top
-                    }, 1000);
+            document.querySelectorAll('.button.back').forEach(button => {
+                button.addEventListener('click', event => {
+                    event.preventDefault();
+                    document.querySelectorAll('.wrapper > section').forEach(section => {
+                        section.style.display = 'block';
+                    });
+                    document.querySelectorAll('.work-experience').forEach(section => {
+                        section.style.display = 'none';
+                    });
                 });
             });
         </script>
+
     </body>
 </html>
