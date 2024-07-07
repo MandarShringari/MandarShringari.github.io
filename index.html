@@ -28,6 +28,9 @@
             .actions {
                 margin-top: 20px;
             }
+            .work-experience {
+                display: none;
+            }
         </style>
     </head>
     <body class="is-preload">
@@ -115,7 +118,7 @@
             </section>
 
             <!-- Detailed Work Experience Sections -->
-            <section id="oxford" class="work-experience" style="display:none;">
+            <section id="oxford" class="work-experience">
                 <h2>STEM Summer Coding and Robotics Experience - Oxford Science Centre</h2>
                 <p>In this experience, I made a line-following robot using an infrared sensor. To complete the project, I learned MicroPython, circuit building, soldering, CAD designing, and other character-building lessons such as problem-solving and resilience. These skills are invaluable for my STEM career and make me eligible for the gold crest.</p>
                 <p>The STEM experience at the Oxford Science Center provided practical insights from companies like GE Healthcare and Oxford PV. Working with these companies gave me valuable skills such as adaptability and analytical thinking, which are transferable to any field.</p>
@@ -256,11 +259,21 @@
                     var target = $(this).data('target');
                     $('.work-experience').hide();
                     $('#' + target).show();
+
+                    // Scroll to the work experience section
+                    $('html, body').animate({
+                        scrollTop: $('#' + target).offset().top
+                    }, 1000);
                 });
 
                 $('.back').click(function(e) {
                     e.preventDefault();
                     $(this).closest('.work-experience').hide();
+
+                    // Scroll back to the top of the work experience overview section
+                    $('html, body').animate({
+                        scrollTop: $('#one').offset().top
+                    }, 1000);
                 });
             });
         </script>
